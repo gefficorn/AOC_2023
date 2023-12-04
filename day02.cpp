@@ -34,7 +34,7 @@ int main()
     }
     cout<<ans<<endl;
     auto end = chrono::steady_clock::now(); //time end
-    auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - start);
-    printf("%f ns", elapsed.count() * 1e-9);
+    auto elapsed = chrono::duration_cast<chrono::microseconds>(end - start);
+    printf("%ld µs", elapsed.count());
     return 0;
 }
