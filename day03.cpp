@@ -74,7 +74,7 @@ int main()
     if (part_one) ans=accumulate(part_numbers.begin(), part_numbers.end(), 0);
     cout<<ans<<endl;
     auto end = chrono::steady_clock::now();
-    auto elapsed = chrono::duration_cast<chrono::nanoseconds>(end - start);
-    printf("%f ns", elapsed.count() * 1e-9);
+    auto elapsed = chrono::duration_cast<chrono::microseconds>(end - start);
+    printf("%ld µs", elapsed.count());
     return 0;
 }
